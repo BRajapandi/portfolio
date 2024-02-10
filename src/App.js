@@ -14,7 +14,13 @@ function App() {
   return (
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Nav />} loader={<div>Loading...</div>}>
-        <Route path="home" element={<Home />} loader={<div>Loading...</div>} />
+        <Route index element={<Home />} loader={<div>Loading...</div>} />
+        <Route
+          path="home"
+          index
+          element={<Home />}
+          loader={<div>Loading...</div>}
+        />
         <Route
           path="about"
           element={<About />}

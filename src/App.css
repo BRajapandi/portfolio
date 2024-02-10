@@ -39,7 +39,7 @@
   /* faabab F99797  fa7774 ee4d51 f76c6c f87b7b 4aedc2*/
   /* ffbec9 ee4d51*/
   --dark-text-color1: #faabab;
-  --dark-text-color2: #f99797;
+  --dark-text-color2: #ef8c8c;
   --dark-text-color3: #fa7774;
   --dark-text-color4: #ee4d51;
   --dark-text-color5: #f76c6c;
@@ -55,7 +55,7 @@
   --text-secondary-color: var(--grey-500);
 }
 .dark-theme {
-  --text-color: var(--dark-text-color5);
+  --text-color: var(--dark-text-color6);
   --background-color: var(--grey-900);
   --text-secondary-color: var(--dark-text-color4);
   --background-secondary-color: var(--dark-mode-bg-secondary-color);
