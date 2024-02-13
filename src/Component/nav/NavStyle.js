@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapped = styled.div`
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
   background-color: var(--background-color);
   .header {
     position: fixed;

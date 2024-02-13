@@ -2,6 +2,7 @@ import Wrapped from "./HomeStyle";
 import { FaReact, FaNodeJs } from "react-icons/fa6"; //FaHtml5, FaGithub
 import { SiMongodb } from "react-icons/si";
 import mine from "../../asserts/mine/profile.png";
+import ScondRow from "./ScondRow";
 function Home() {
   return (
     <Wrapped>
@@ -19,7 +20,7 @@ function Home() {
               I'm creative web Developer based in Madurai, and I'm very
               passionate and dedicated to my work
             </div>
-            <div>
+            <div className="abtBtnWrapper">
               <button>About Me</button>
             </div>
           </div>
@@ -46,6 +47,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ScondRow />
     </Wrapped>
   );
 }
