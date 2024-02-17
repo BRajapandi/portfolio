@@ -4,10 +4,11 @@ const CircleSVG = ({ fill }) => {
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="126.000000pt"
-        height="128.000000pt"
+        width="96.000000pt"
+        height="98.000000pt"
         viewBox="0 0 1261.000000 1280.000000"
         preserveAspectRatio="xMidYMid meet"
+        className="secondRowCircle"
       >
         <g
           transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"

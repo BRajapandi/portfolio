@@ -3,24 +3,49 @@ import { FaReact, FaNodeJs } from "react-icons/fa6"; //FaHtml5, FaGithub
 import { SiMongodb } from "react-icons/si";
 import mine from "../../asserts/mine/profile.png";
 import ScondRow from "./ScondRow";
+import ThirdRow from "./ThirdRow";
+import { useEffect } from "react";
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapped>
       <div className="firstRow">
         <div className="firstCol">
           <div className="ColWrapper">
             <div className="hello">
-              Hello, <span>I'm</span>
+              <div data-aos="fade-up">
+                Hello, <span>I'm</span>
+              </div>
             </div>
-            <div className="name">RAJAPANDI</div>
+            <div className="protest-revolution-regular name">
+              <div
+                data-aos="fade-down"
+                style={{ paddingBottom: "10px" }}
+                data-aos-delay="400"
+              >
+                RAJAPANDI
+              </div>
+            </div>
             <div className="profileSub">
-              {/**Full-Stack */}A <span>web</span> Developer From Madurai
+              <div data-aos="fade-zoom-in" data-aos-delay="600">
+                A <span>web</span> Developer From Madurai
+              </div>
             </div>
-            <div>
+            <div
+              className="profileSubContent"
+              data-aos="fade-zoom-in"
+              data-aos-delay="800"
+            >
               I'm creative web Developer based in Madurai, and I'm very
               passionate and dedicated to my work
             </div>
-            <div className="abtBtnWrapper">
+            <div
+              className="abtBtnWrapper"
+              data-aos="fade-zoom-in"
+              data-aos-delay="800"
+            >
               <button>About Me</button>
             </div>
           </div>
@@ -48,6 +73,18 @@ function Home() {
         </div>
       </div>
       <ScondRow />
+      <br />
+      <ThirdRow />
+      {/* <div className="progress">
+        <div
+          className="progress-bar progress-bar-striped"
+          role="progressbar"
+          style={{ width: "100%" }}
+          aria-valuenow="100"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div> */}
     </Wrapped>
   );
 }

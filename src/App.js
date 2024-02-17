@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+import "./fonts.css";
 import { useEffect } from "react";
 import Aos from "aos";
 import Nav from "./Component/nav/Nav";
@@ -9,7 +10,14 @@ import NotFound from "./Component/notFound/NotFound";
 function App() {
   const location = useLocation();
   useEffect(() => {
-    Aos.init({ duration: 1000, offset: 0 });
+    Aos.init({
+      duration: 1000,
+      offset: 10,
+      easing: "ease", // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: true,
+      // disableMutationObserver: true,
+    });
   }, []);
   return (
     <Routes location={location} key={location.pathname}>

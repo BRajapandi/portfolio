@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   background-color: var(--background-color);
   .header {
     position: fixed;
     width: 100vw;
-    padding: 15px 15px 0px 0px;
+    padding: 15px 15px 15px 0px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 100000;
+    background-color: #3a39392e;
+    backdrop-filter: blur(10px);
     .navList {
       .navlink {
         text-decoration: none;

@@ -44,9 +44,7 @@ function Nav() {
             </div>
           </div>
         </div>
-        <div className="outlet">
-          <Outlet />
-        </div>
+        <Outlet />
       </div>
     </Wrapped>
   );
