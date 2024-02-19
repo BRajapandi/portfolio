@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
+  margin-top: 20px;
+  overflow: hidden;
   .title {
     font-size: 2.5rem;
     letter-spacing: 6px;
     text-align: center;
   }
   .skillsWrapper {
+    overflow: hidden;
+    margin-top: 15px;
     display: grid;
     grid-template-columns: 240px 240px 240px 240px;
     gap: 4rem 5rem;

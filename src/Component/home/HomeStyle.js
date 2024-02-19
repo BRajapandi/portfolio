@@ -98,19 +98,19 @@ const Wrapped = styled.section`
       }
       20% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        scale: 1.03;
+        scale: 1.06;
       }
       40% {
         border-radius: 61% 39% 31% 69% / 30% 30% 70% 70%;
-        scale: 1.06;
+        scale: 1.08;
       }
       60% {
         border-radius: 61% 39% 31% 69% / 54% 65% 35% 46%;
-        scale: 1.04;
+        scale: 1.03;
       }
       80% {
         border-radius: 48% 52% 70% 30% / 72% 63% 37% 28%;
-        scale: 1.02;
+        scale: 1.07;
       }
       100% {
         border-radius: 59% 41% 62% 38% / 69% 55% 45% 31%;
@@ -197,71 +197,6 @@ const Wrapped = styled.section`
             font-size: 16px;
             font-weight: 600;
             letter-spacing: 2px;
-          }
-        }
-      }
-    }
-  }
-  .secondRow {
-    box-sizing: border-box;
-    margin-top: 15px;
-    .cardWrapperstyle {
-      display: grid;
-      grid-template-columns: 240px 240px 240px;
-      gap: 10rem;
-      align-items: center;
-      justify-content: center;
-      .cardstyle {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: start;
-        .icon {
-          position: relative;
-          .c1 {
-            color: var(--dark-text-color8);
-          }
-          .c2 {
-            color: #4aedc2;
-          }
-          .actualIcon {
-            position: absolute;
-            text-align: center;
-            font-size: 59px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(0deg);
-          }
-        }
-        .cardContent {
-          margin: 20px 3px;
-          text-indent: 40px;
-          text-align: justify;
-          overflow: hidden;
-        }
-      }
-    }
-    .showMoreStyle {
-      a {
-        text-align: center;
-        display: block;
-        text-decoration: none;
-      }
-      .downArrowWrapped {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: relative;
-        .downArrow {
-          position: absolute;
-          &:nth-child(1) {
-            top: 3px;
-            height: 40px;
-          }
-          &:nth-child(2) {
-            top: 6px;
-            height: 50px;
           }
         }
       }

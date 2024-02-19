@@ -11,7 +11,6 @@ function ThirdRow() {
     { skill: "CSS3", experience: "3 years", level: 90 },
     { skill: "Styled-Component", experience: "1 year 6 months", level: 80 },
     { skill: "Tailwind", experience: "2 year", level: 80 },
-    { skill: "GIT & GIT HUB", experience: "3 year", level: 80 },
     { skill: "PostgreSQL", experience: "1 year", level: 60 },
     { skill: "SpringBoot", experience: "1 year", level: 50 },
   ];
@@ -20,7 +19,12 @@ function ThirdRow() {
       <div className="title protest-revolution-regular">SKILL SET</div>
       <div className="skillsWrapper">
         {skillsSet.map((e, index) => (
-          <div key={index} className="skillCard">
+          <div
+            key={index}
+            className="skillCard"
+            data-aos="fade-up"
+            data-aos-delay={50 * index}
+          >
             <div className="skillTitle">{e.skill}</div>
             <div
               style={{
