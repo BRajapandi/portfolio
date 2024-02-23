@@ -33,36 +33,44 @@ const Wrapped = styled.div`
           }
         }
         .cardalign {
-          background-color: var(--dark-text-color4);
+          background-color: var(--grey-1000);
           display: grid;
           grid-template-columns: 35px 1fr;
           gap: 5px;
           color: #fff;
           padding: 2px 6px;
           border-radius: 6px;
-          box-shadow: 1px 1px 3px var(--dark-text-color4);
+          box-shadow: 0px 0px 4px var(--dark-text-color4);
         }
         .arrowWrapper {
           position: absolute;
           left: 5px;
           top: 10px;
-          transform: rotateZ(348deg);
+          transform: rotateZ(-3deg);
+          animation-name: arrowWrapper;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
         }
         .firstColCard1 {
           position: absolute;
           left: 40px;
           top: 180px;
+          animation-name: firstColCard1;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
           .icon {
             vertical-align: middle;
             text-align: center;
-            color: var(--grey-900);
+            color: #4aedc2;
             font-size: 28px;
           }
           .content {
-            color: var(--grey-900);
+            color: #4aedc2;
             font-size: 16px;
             font-weight: 600;
-            letter-spacing: 1cap.5px;
+            letter-spacing: 1.2px;
           }
         }
         .firstColCard2 {
@@ -72,14 +80,14 @@ const Wrapped = styled.div`
           .icon {
             vertical-align: middle;
             text-align: center;
-            color: var(--grey-900);
+            color: #fbc02d;
             font-size: 28px;
           }
           .content {
-            color: var(--grey-900);
+            color: #fbc02d;
             font-size: 16px;
             font-weight: 600;
-            letter-spacing: 1cap.5px;
+            letter-spacing: 1.2px;
           }
         }
       }
@@ -112,8 +120,6 @@ const Wrapped = styled.div`
         .aboutme {
           width: 70%;
           margin: 15px 0px 0px 15px;
-          padding-left: 16px;
-          border-left: 2px dashed var(--dark-text-color8);
           text-align: justify;
           text-indent: 50px;
           font-size: 20px;
@@ -121,7 +127,37 @@ const Wrapped = styled.div`
       }
     }
   }
-
+  @keyframes arrowWrapper {
+    0% {
+      transform: rotateZ(-3deg);
+    }
+    25% {
+      transform: rotateZ(3deg);
+    }
+    50% {
+      transform: rotateZ(-3deg);
+    }
+    75% {
+      transform: rotateZ(3deg);
+    }
+    100% {
+      transform: rotateZ(-3deg);
+    }
+  }
+  @keyframes firstColCard1 {
+    0% {
+      top: 180px;
+      scale: 1;
+    }
+    50% {
+      top: 185px;
+      scale: 1.01;
+    }
+    100% {
+      top: 180px;
+      scale: 1;
+    }
+  }
   .AboutWrapper {
     background-image: url(${AboutBg});
     background-position: center;
