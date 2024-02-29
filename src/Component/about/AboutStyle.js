@@ -56,10 +56,6 @@ const Wrapped = styled.div`
           position: absolute;
           left: 40px;
           top: 180px;
-          animation-name: firstColCard1;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
           .icon {
             vertical-align: middle;
             text-align: center;
@@ -127,6 +123,111 @@ const Wrapped = styled.div`
       }
     }
   }
+  .Title {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    /* position: relative; */
+    &::after {
+      /* position: absolute; */
+      content: "";
+      display: inline-block;
+      height: 0.1em;
+      vertical-align: middle;
+      width: 200px;
+      margin-right: -100%;
+      margin-left: 10px;
+      border-radius: 4px;
+      border-top: 4px solid var(--dark-text-color8);
+    }
+  }
+  .experienceWrapper {
+    margin: 40px 0px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    vertical-align: middle;
+    gap: 30px;
+    .experienceCard {
+      margin-left: 10px;
+      .start > svg,
+      .end > svg {
+        fill: var(--dark-text-color4);
+        width: 30px;
+        height: 30px;
+      }
+      .start {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        gap: 10px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 20px;
+        }
+      }
+      .experience {
+        padding: 10px 0px 10px 22px;
+        margin-left: 13px;
+        text-align: justify;
+        border-left: 2px solid var(--dark-text-color4);
+      }
+    }
+    .expCard2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      .col2Wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        .col2Card2 {
+          width: 240px;
+          padding: 0px 10px;
+          background-color: #23232345;
+          border-radius: 8px;
+          border: 1px solid #232323;
+          text-align: justify;
+          .icon {
+            display: block;
+            font-size: 24px;
+            svg {
+              color: var(--dark-text-color4);
+            }
+          }
+          .subTitle {
+            display: block;
+            color: var(--dark-text-color4);
+            font-weight: 600;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+  .contactWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contactTitle {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      &::after,
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0.1em;
+        vertical-align: middle;
+        width: 400px;
+        margin-left: 10px;
+        border-radius: 4px;
+        border-top: 4px solid var(--dark-text-color8);
+      }
+    }
+  }
   @keyframes arrowWrapper {
     0% {
       transform: rotateZ(-3deg);
@@ -144,20 +245,7 @@ const Wrapped = styled.div`
       transform: rotateZ(-3deg);
     }
   }
-  @keyframes firstColCard1 {
-    0% {
-      top: 180px;
-      scale: 1;
-    }
-    50% {
-      top: 185px;
-      scale: 1.01;
-    }
-    100% {
-      top: 180px;
-      scale: 1;
-    }
-  }
+
   .AboutWrapper {
     background-image: url(${AboutBg});
     background-position: center;

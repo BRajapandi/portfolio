@@ -5,12 +5,14 @@ import mine from "../../asserts/mine/profile.png";
 import ScondRow from "./ScondRow";
 import ThirdRow from "./ThirdRow";
 import { useEffect } from "react";
+import Index from "./Background.js";
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <Wrapped>
+      <Index />
       <div className="firstRow">
         <div className="firstCol">
           <div className="ColWrapper">
@@ -75,16 +77,6 @@ function Home() {
       <ScondRow />
       <br />
       <ThirdRow />
-      {/* <div className="progress">
-        <div
-          className="progress-bar progress-bar-striped"
-          role="progressbar"
-          style={{ width: "100%" }}
-          aria-valuenow="100"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div> */}
     </Wrapped>
   );
 }
