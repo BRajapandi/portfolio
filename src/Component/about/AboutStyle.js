@@ -208,23 +208,64 @@ const Wrapped = styled.div`
     }
   }
   .contactWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .contactTitle {
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      &::after,
-      &::before {
-        content: "";
-        display: inline-block;
-        height: 0.1em;
-        vertical-align: middle;
-        width: 400px;
-        margin-left: 10px;
-        border-radius: 4px;
-        border-top: 4px solid var(--dark-text-color8);
+    .TitleWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .contactTitle {
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        &::after,
+        &::before {
+          content: "";
+          display: inline-block;
+          height: 0.1em;
+          vertical-align: middle;
+          width: 400px;
+          margin-left: 10px;
+          border-radius: 4px;
+          border-top: 4px solid var(--dark-text-color8);
+        }
+      }
+    }
+    .contRow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      .contCol1 {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+        min-height: 60vh;
+        z-index: 2;
+        width: 100%;
+        color: #fff;
+        margin: 20px 5em;
+        .contCard {
+          width: 230px;
+          display: flex;
+          align-items: center;
+          .contact span {
+            display: block;
+          }
+          .iconWrapp {
+            font-size: 35px;
+            padding: 4px;
+            vertical-align: middle;
+          }
+        }
+        .contAddress {
+          width: 100%;
+          margin-top: 25px;
+        }
+        .contCardImg {
+          z-index: 1;
+          width: 80%;
+          height: 80%;
+        }
       }
     }
   }

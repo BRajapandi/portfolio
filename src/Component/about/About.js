@@ -9,11 +9,10 @@ import Star from "../../asserts/svg/star";
 import { useEffect } from "react";
 import { IoDiamond } from "react-icons/io5";
 import { SlGraph } from "react-icons/sl";
-
-// import CurledArrow from "../../asserts/svg/arrow.svg";
-
-// import { TbBrandNodejs } from "react-icons/tb";
-// import { BiLogoPostgresql } from "react-icons/bi";
+import { FaMobile, FaLinkedin } from "react-icons/fa";
+import { MdMarkEmailRead } from "react-icons/md";
+import { FaMapLocationDot, FaGithub } from "react-icons/fa6";
+import CurledArrow from "../../asserts/svg/about-contact.svg";
 
 function About() {
   useEffect(() => {
@@ -152,8 +151,54 @@ function About() {
         </div>
       </div>
       <div className="contactWrapper">
-        <div className="contactTitle">React Me</div>
-        <div className=""></div>
+        <div className="TitleWrapper">
+          <div className="contactTitle">Reach Me</div>
+        </div>
+        <div className="contRow">
+          <div className="contCol1">
+            <div className="contCard">
+              <FaMobile className="iconWrapp" />
+              <span className="contact">
+                <span>Mobile</span>
+                <span>8667494635</span>
+              </span>
+            </div>
+            <div className="contCard" style={{ alignSelf: "flex-end" }}>
+              <MdMarkEmailRead className="iconWrapp" />
+              <span className="contact">
+                <span>E-Mail</span>
+                <span>rajapandib29@gmail.com</span>
+              </span>
+            </div>
+            <div className="contCard">
+              <FaLinkedin className="iconWrapp" />
+              <span className="contact">
+                <span>Linkedin</span>
+                <span>linkedin.com/rajapandib</span>
+              </span>
+            </div>
+            <div className="contCard" style={{ alignSelf: "flex-end" }}>
+              <FaGithub className="iconWrapp" />
+              <span className="contact">
+                <span>GitHub</span>
+                <span>github.com/BRajapandi</span>
+              </span>
+            </div>
+            <div className="contCard contAddress">
+              <FaMapLocationDot className="iconWrapp" />
+              <span className="contact">
+                <span>Address</span>
+                <span>
+                  19,Hemalatha illam manavalan nagar main road, Sellur,
+                  Madurai-625002, TamilNadu
+                </span>
+              </span>
+            </div>
+          </div>
+          <div className="contCol2">
+            <img src={CurledArrow} className="contCardImg" />
+          </div>
+        </div>
       </div>
     </Wrapped>
   );
